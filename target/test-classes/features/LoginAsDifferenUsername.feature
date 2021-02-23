@@ -12,9 +12,9 @@ Feature: Login to Library as librarian and students
     @student
     Examples:
       | role      | email               | password | page      |
-      | student   | student30@library   | IaT9YI0I | books     |
-      | student   | student31@library   | yOPdSR0u | books     |
-      | student   | student32@library   | GYLemAba | books     |
+      | student   | student30@library   | IaT9YI0I | Books     |
+      | student   | student31@library   | yOPdSR0u | Books     |
+      | student   | student32@library   | GYLemAba | Books     |
 
     @librarian
     Examples:

@@ -7,6 +7,7 @@ import io.cucumber.java.en.And;
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
+import org.junit.Assert;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 
@@ -27,14 +28,24 @@ public class LibaryLogin_stepDefinition {
 
     @When("I login using {string} and {string}")
     public void i_login_using_and(String string0, String string1) {
-        WebElement driver ;
 
         librarianPage.usernameBox.sendKeys(string0);
         librarianPage.passwordBox.sendKeys(string1);
+        librarianPage.signIn.click();
     }
     @Then("the user on  {string}")
-    public void the_user_on(String string) {
+    public void the_user_on(String page) {
+        if(page.equals("books")) {
+            String expectedBook = page;
+            String actualBook = librarianPage.booksLinkPage.getText();
+            Assert.assertEquals(expectedBook,actualBook);
+        }else if(page.equals("Dashboard")){
+            String expectedDashboard = page;
+            String actualDashboard = librarianPage.DashboardLinkPage.getText();
+            Assert.assertEquals(expectedDashboard,actualDashboard);
+        }
 
+        Driver.closeDriver();
     }
 
 }
