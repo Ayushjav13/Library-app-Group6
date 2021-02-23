@@ -18,5 +18,14 @@ public class LibrarianPage {
     @FindBy(id = "inputPassword")
     public WebElement passwordBox;
 
+    @FindBy(xpath = "//button[.='Sign in']")
+    public WebElement signIn;
+
+    @FindBy (linkText = "Books")
+    public WebElement booksLinkPage;
+
+    @FindBy (linkText = "Dashboard")
+    public WebElement DashboardLinkPage;
+
 
 }
