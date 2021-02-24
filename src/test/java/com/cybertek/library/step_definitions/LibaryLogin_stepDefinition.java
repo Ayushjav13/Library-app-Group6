@@ -16,9 +16,9 @@ public class LibaryLogin_stepDefinition {
 
     @Given("I am on the login page")
     public void i_am_on_the_login_page() {
-
-        Driver.getDriver().get("http://library2.cybertekschool.com/login.html");
         BrowserUtils.wait(3);
+        Driver.getDriver().get("http://library2.cybertekschool.com/login.html");
+      //  BrowserUtils.wait(3);
     }
 
 //    @When("the user login as a {string}")
