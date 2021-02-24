@@ -27,5 +27,10 @@ public class LibrarianPage {
     @FindBy (linkText = "Dashboard")
     public WebElement DashboardLinkPage;
 
+    @FindBy (id = "navbarDropdown")
+    public WebElement userID;
+
+    @FindBy(linkText = "Log Out")
+    public WebElement logOut;
 
 }
