@@ -15,4 +15,26 @@ public class UsersPage {
 
     @FindBy(xpath = "//li[@class='nav-item']")
     public List<WebElement> navBarList;
+
+    @FindBy (xpath = "//select[@name='tbl_users_length']")
+    public WebElement ShowRecordsDropdown;
+
+    @FindBy (xpath = "//th")
+    public List<WebElement> studentTable;
+
+    @FindBy (linkText = "Borrowing Books")
+    public WebElement borrowingBooksLink;
+
+    @FindBy (id = "user_groups")
+    public WebElement userCategorySelect;
+
+    @FindBy (xpath = "//select[@id='user_groups']//option")
+    public List<WebElement> userCategory;
+
+    @FindBy (id = "user_status")
+    public WebElement StatusSelect;
+
+    @FindBy (xpath = "//select[@id='user_status']//option")
+    public List<WebElement> userStatus;
+
 }

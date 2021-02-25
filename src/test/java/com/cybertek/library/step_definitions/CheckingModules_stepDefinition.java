@@ -15,7 +15,8 @@ public class CheckingModules_stepDefinition {
     UsersPage usersPage = new UsersPage();
     @When("I enter username {string}")
     public void i_enter_username(String string) {
-       librarianPage.usernameBox.sendKeys(string);
+
+        librarianPage.usernameBox.sendKeys(string);
     }
 
 
