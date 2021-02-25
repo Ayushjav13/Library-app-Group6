@@ -24,4 +24,17 @@ public class UsersPage {
 
     @FindBy (linkText = "Borrowing Books")
     public WebElement borrowingBooksLink;
+
+    @FindBy (id = "user_groups")
+    public WebElement userCategorySelect;
+
+    @FindBy (xpath = "//select[@id='user_groups']//option")
+    public List<WebElement> userCategory;
+
+    @FindBy (id = "user_status")
+    public WebElement StatusSelect;
+
+    @FindBy (xpath = "//select[@id='user_status']//option")
+    public List<WebElement> userStatus;
+
 }
