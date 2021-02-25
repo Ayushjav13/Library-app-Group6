@@ -3,6 +3,7 @@ package com.cybertek.library.step_definitions;
 import com.cybertek.library.pages.LibrarianPage;
 import com.cybertek.library.utilities.BrowserUtils;
 import com.cybertek.library.utilities.Driver;
+import io.cucumber.java.en.And;
 import io.cucumber.java.en.Then;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
@@ -14,4 +15,5 @@ public class LibraryLogout_stepDefinition {
         librarianPage.userID.click();
         librarianPage.logOut.click();
     }
+
 }

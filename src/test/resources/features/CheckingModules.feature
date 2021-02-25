@@ -1,6 +1,6 @@
 Feature: User able to see modules one logged in
 
-  3. As a user, I should be able to  see seveal modules once I login.
+  3. As a user, I should be able to  see several modules once I login.
 
   @student1
 

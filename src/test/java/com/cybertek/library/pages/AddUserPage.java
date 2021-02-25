@@ -33,10 +33,20 @@ public class AddUserPage {
     @FindBy(xpath = "//input[@name='start_date']")
     public WebElement StartDateBox;
 
-    @FindBy()
+
+    @FindBy(xpath = "//input[@name='end_date']")
     public WebElement EndDateBox;
 
-    @FindBy()
+    @FindBy(id = "address")
     public WebElement AddressBox;
+
+    @FindBy(xpath = "//button[@type='cancel']")
+    public WebElement CloseButton;
+
+    @FindBy(xpath = "//button[@type='submit']")
+    public WebElement SaveChangesButton;
+
+    @FindBy(linkText = "Edit User")
+    public WebElement EditUserLink;
 
 }
